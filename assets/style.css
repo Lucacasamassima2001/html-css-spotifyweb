@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.content-container{
+    background-color: rgba(20,25,34,255);
+    display: flex;
+}
+
+.leftbar{
+    width: 200px;
+    height: calc(100vh - 100px);
+    background-color: rgba(0,0,0,255);
+    padding: 1em;
+    font-size: .9em;
+    z-index: 99;
+}
+
+
+.small-logo{
+    display: none;
+}
+
+@media screen and (max-width:552px) {
+    .big-logo{
+        display: none;
+    }
+
+    .small-logo{
+        display: inline;
+    }
+    
+}
+
+.options{
+    color: white;
+    list-style: none;
+    padding-top: 2em;
+}
+
+.option{
+    padding-top: .5em;
+}
+
+.leftbar h3{
+    color: white;
+    padding-top: 1em;
+}
+
+.playlist-names{
+    color: white;
+    list-style: none;
+    padding-top: 1em;
+}
+
+.playlist-names>li{
+    padding-top: 1em;
+}
+
+.crea{
+    display: flex;
+    align-items: center;
+    font-size: 1.2em;
+}
+
+.add{
+    width: 30px;
+    height: 30px;
+    padding: .5em;
+    background-color: grey;
+    margin-right: .5em;
+    color: black;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width:552px) {
+    .playlist-names{
+        display: none;
+    }
+
+    .leftbar h3{
+        display: none;
+    }
+
+    .option{
+        display: none;
+    }
+
+    .i{
+        display: inline;
+    }
+}
+
+.contents{
+    width: 85%;
+    height: 100vh;
+    background-color: green;
+}
+
+.upperbar{
+    width: 100%;
+    height: 100px;
+    background-color: rgba(8,11,18,255);
+    position: fixed;
+    top: 0;
+    right: 0;
+    opacity: 80%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.upgrade{
+    text-decoration: none;
+    color: white;
+    padding: 1em;
+    border: 2px solid white;
+    border-radius: 50px;
+    margin-right: 1em;
+    font-size: 0.8em;
+}
+
+.upgrade:hover{
+    transform: scale(1.1);
+}
+
+.music{
+    padding: 50px;
+    height: calc(100vh - 100px);
+    background-color: rgba(20,25,34,255);
+    overflow-y: auto;
+}
+
+.lowerbar{
+    width: 100%;
+    height: 100px;
+    background-color: rgba(40,40,40,255);
+    z-index: 99;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
