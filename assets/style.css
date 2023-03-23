@@ -191,7 +191,7 @@ li:hover{
 }
 
 .user-icons>*{
-    padding-top: 1em;
+    padding-bottom: 1em;
 }
 
 .user-arrow{
@@ -221,6 +221,10 @@ li:hover{
 
 @media screen and (max-height:600px) {
     .user{
+        display: none;
+    }
+
+    .user-icons{
         display: none;
     }
 }
@@ -427,6 +431,7 @@ h2{
     text-align: center;
     margin-top: .5em;
     font-weight: bold;
+    line-height: 1.5em;
 }
 
 .subtitle{
@@ -484,19 +489,34 @@ h2{
     font-size: .7em;
 }
 
+.title-current:hover{
+    cursor: pointer;
+}
+
 .subtitle-current{
     color: grey;
     font-size: .5em;
 }
 
+.subtitle-current:hover{
+    color: white;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 .hearth-folder{
     margin-left: .8em;
     font-size: .9em;
-    color: white;
+    color: grey;
 }
 
 .hearth-folder i{
     margin-right: .2em;
+}
+
+.hearth-folder i:hover{
+    color: white;
+    cursor: pointer;
 }
 
 .player{
@@ -508,7 +528,13 @@ h2{
     margin-top: 1em;
     display: flex;
     justify-content: center;
-    color: white;
+    color: grey;
+}
+
+
+
+.enlarge:hover{
+    transform: scale(2);
 }
 
 .player-buttons>*{
@@ -516,6 +542,7 @@ h2{
 }
 
 .player-buttons i:hover{
+    color: white;
     cursor: pointer;
 }
 
@@ -534,13 +561,39 @@ h2{
     height: 5px;
     background-color: grey;
     border-radius: 30px;
+    cursor: pointer;
 }
 
 .inside-bar{
-    width: 30%;
     height: 100%;
     background-color: lightgrey;
     border-radius: 30px;
+    position: relative;
+}
+
+.hover-bar{
+    width: 30%;
+    height: 100%;
+    opacity: 0;
+}
+
+.hover-bar:hover{
+    opacity: 100;
+}
+
+.endpoint-bar{
+    width: 15px;
+    height: 15px;
+    border-radius: 50px;
+    background-color: white;
+    position: absolute;
+    right: 0;
+    top: -100%;
+}
+
+.inside-bar{
+    background-color: rgba(173,255,47,255);
+    cursor: pointer;
 }
 
 
@@ -551,11 +604,16 @@ h2{
     display: flex;
     align-items: center;
     font-size: .6em;
-    color: white;
+    color: grey;
 }
 
 .setting>*{
     margin-right: .5em;
+}
+
+.setting>*:hover{
+    color: white;
+    cursor: pointer;
 }
 
 .volume-bar{
@@ -564,13 +622,25 @@ h2{
     background-color: grey;
     margin-left: 1em;
     border-radius: 30px;
+    cursor: pointer;
 }
 
 .inside-volume-bar{
-    width: 30%;
+    width: 40%;
     height: 100%;
     background-color: lightgrey;
     border-radius: 30px;
+}
+
+.inside-volume-bar{
+    background-color: rgba(173,255,47,255);
+    cursor: pointer;
+    position: relative;
+    opacity: 0;
+}
+
+.inside-volume-bar:hover{
+    opacity: 100;
 }
 
 
