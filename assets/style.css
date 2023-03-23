@@ -78,6 +78,13 @@
 
 .option{
     padding-top: .5em;
+    display: flex;
+    align-items: center;
+}
+
+.small-icon{
+    height: 20px;
+    vertical-align: sub;
 }
 
 .leftbar h3{
