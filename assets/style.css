@@ -363,15 +363,29 @@ h2{
     cursor: pointer;
 }
 
+.play-hidden-round{
+    width: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    font-size: 6em;
+    opacity: 0%;
+    color: white;
+    background-color: rgba(0,0,0,255);
+}
+
+.play-hidden-round:hover{
+    opacity: 80%;
+    cursor: pointer;
+}
+
 .album-img-round{
     width: 100%;
     border-radius: 50%;
 }
-
-
-
-
-
 
 .title{
     color: white;
