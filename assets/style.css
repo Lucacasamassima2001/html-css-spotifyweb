@@ -100,6 +100,7 @@
 
 .leftbar h3{
     padding-top: 1em;
+    padding-bottom: 1em;
 }
 
 .leftbar h3:hover{
@@ -110,6 +111,8 @@
 .playlist-names{
     list-style: none;
     padding-top: .2em;
+    height: 300px;
+    overflow-y: auto;
 }
 
 .playlist-names>li{
@@ -124,7 +127,6 @@ li:hover{
 .crea{
     display: flex;
     align-items: center;
-    font-size: 1.2em;
 }
 
 .crea>*:hover{
@@ -219,7 +221,7 @@ li:hover{
     }
 }
 
-@media screen and (max-height:600px) {
+@media screen and (max-height:695px) {
     .user{
         display: none;
     }
