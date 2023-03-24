@@ -5,6 +5,15 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+a{
+    text-decoration: none;
+    color: grey;
+}
+
+li a:hover{
+    color: white;
+}
+
 
 .content-container{
     height: 100vh;
@@ -67,9 +76,7 @@
     padding-top: 1em;
 }
 
-.icons>div:hover{
-    cursor: pointer;
-}
+
 .options{
     list-style: none;
     padding-top: 2em;
@@ -101,17 +108,14 @@
 .leftbar h3{
     padding-top: 1em;
     padding-bottom: 1em;
+    color: rgba(173,255,47,255);
 }
 
-.leftbar h3:hover{
-    color: white;
-    cursor: pointer;
-}
 
 .playlist-names{
     list-style: none;
     padding-top: .2em;
-    height: 300px;
+    height: 200px;
     overflow-y: auto;
 }
 
@@ -119,19 +123,13 @@
     padding-top: 1em;
 }
 
-li:hover{
-    color: white;
-    cursor: pointer;
-}
+
 
 .crea{
     display: flex;
     align-items: center;
 }
 
-.crea>*:hover{
-    cursor: pointer;
-}
 
 .add{
     width: 30px;
@@ -147,9 +145,7 @@ li:hover{
     font-weight: bold;
 }
 
-.add:hover{
-    color: white;
-}
+
 
 @media screen and (max-width:552px) {
     .playlist-names{
@@ -200,14 +196,12 @@ li:hover{
     font-size: 1em;
 }
 
-.user-icon:hover{
+.user-icon a:hover{
     color: white;
-    cursor: pointer;
 }
 
-.user-arrow:hover{
+.user-arrow a:hover{
     color: white;
-    cursor: pointer;
 }
 
 @media screen and (max-width:552px) {
@@ -236,6 +230,10 @@ li:hover{
     padding-top: 1em;
 }
 
+.install:hover{
+    color: white;
+}
+
 .fa-circle-user{
     font-size: 1.5em;
 }
@@ -245,15 +243,6 @@ li:hover{
     font-weight: bold;
 }
 
-.app-install:hover{
-    color: white;
-    cursor: pointer;
-}
-
-.user-img:hover{
-    color: white;
-    cursor: pointer;
-}
 
 /* END LEFTBAR */
 
@@ -294,7 +283,7 @@ li:hover{
 
 .upgrade:hover{
     transform: scale(1.1);
-    color: white;
+    color: rgba(173,255,47,255);
 }
 
 /* END UPPER BAR */
@@ -303,9 +292,7 @@ li:hover{
 
 .music{
     padding: 50px;
-    /* height: calc(100vh - 80px); */
     background-color: rgba(20,25,34,255);
-    /* overflow-y: auto; */
 }
 
 nav{
@@ -324,6 +311,8 @@ nav{
     color:grey;
     font-size: .8em;
 }
+
+
 
 .active{
     position: relative;
@@ -397,6 +386,10 @@ h2{
     opacity: 0%;
     color: white;
     background-color: rgba(0,0,0,255);
+}
+
+.fa-rebel{
+    color: red;
 }
 
 .play-hidden:hover{
@@ -481,7 +474,7 @@ h2{
     flex-direction: column;
 }
 
-.song-name span{
+.song-name a{
     margin-bottom: .5em;
     margin-left: .3em;
 }
@@ -491,9 +484,6 @@ h2{
     font-size: .7em;
 }
 
-.title-current:hover{
-    cursor: pointer;
-}
 
 .subtitle-current{
     color: grey;
@@ -503,26 +493,25 @@ h2{
 .subtitle-current:hover{
     color: white;
     text-decoration: underline;
-    cursor: pointer;
 }
 
 .hearth-folder{
     margin-left: .8em;
     font-size: .9em;
     color: grey;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
 }
 
-.hearth-folder i{
-    margin-right: .2em;
-}
+
 
 .hearth-folder i:hover{
     color: white;
-    cursor: pointer;
 }
 
 .player{
-    width: 60%;
+    width: 460px;
     height: 80px;
 }
 
@@ -545,7 +534,6 @@ h2{
 
 .player-buttons i:hover{
     color: white;
-    cursor: pointer;
 }
 
 
@@ -601,7 +589,7 @@ h2{
 
 
 .settings{
-    width: 180px;
+    min-width: 180px;
     height: 80px;
     display: flex;
     align-items: center;
@@ -609,13 +597,16 @@ h2{
     color: grey;
 }
 
-.setting>*{
-    margin-right: .5em;
+.setting{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
 }
+
+
 
 .setting>*:hover{
     color: white;
-    cursor: pointer;
 }
 
 .volume-bar{
@@ -646,8 +637,5 @@ h2{
 }
 
 
-.link{
-    color: white;
-}
 
 
